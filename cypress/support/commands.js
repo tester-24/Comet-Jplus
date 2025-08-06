@@ -42,10 +42,10 @@ Cypress.Commands.add('Login', (Username,password) => {
     cy.xpath("//button[normalize-space()='Continue']").click()
     
     // enter the pin 
-    cy.get('#pin1').type(1)
-    cy.get('#pin2').type(2)
-    cy.get('#pin3').type(3)
-    cy.get('#pin4').type(4)
+    cy.get('#pin1').type(8)
+    cy.get('#pin2').type(5)
+    cy.get('#pin3').type(2)
+    cy.get('#pin4').type(0)
 
     cy.wait(8000)
     cy.xpath("/html/body/app-root/app-layout/app-partner-header-navbar/div[1]/div/nav/div[2]/ul/li[3]/a/span/img[1]").click({force:true})
